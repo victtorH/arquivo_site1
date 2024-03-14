@@ -62,7 +62,7 @@ html{
   top: 0;
   left: 0;
   transition: 0.5s;
-  z-index: 3;
+  z-index: 5;
   
   
 
@@ -72,7 +72,7 @@ html{
    border-bottom: solid 3px;
    border-color: #8a2be2;
    color: white;
-   z-index: 1;
+  
 
 }
 #inicio.rolagem  li a:hover{
@@ -355,4 +355,80 @@ main{
 
 .preciso{
   padding: 0 10px 30px 10px !important;
+}
+
+.mobile-menu div{
+   width: 32px;
+   height: 2px;
+   background: rgb(0, 0, 0);
+   margin: 8px;
+   display: none;
+}
+.mobile-menu{
+   cursor: pointer;
+   margin: 20px 40px;
+   padding: 0px 40px;
+}
+
+
+
+
+
+
+@media (max-width:999px){
+   
+   .nav-list{
+      position: absolute;
+      top:0vh;
+      right:0vw;
+      width: 100vw;
+      height: 100vh;
+      background:rgba(240, 248, 255, 0.401);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateY( -800px);
+      transition : transform 0.5s ease-in ;
+      
+   }
+
+  
+    
+ 
+ .nav-list li{
+       margin-left: 0;
+      opacity: 0;
+      color: rgb(0, 0, 0) !important;
+     
+   }
+
+   .mobile-menu div{
+       display: block;
+      
+     
+   }
+   .mobile-menu {
+      position: absolute;
+      z-index: 5;
+   }
+}
+
+.nav-list{
+   display: flex;
+}
+.nav-list.active{
+   transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+   from {
+       opacity: 0;
+   transform: translateY(-50px);
+   
+   }
+   to{
+       opacity: 1;
+       transform: translateY(0);
+   }
 }
