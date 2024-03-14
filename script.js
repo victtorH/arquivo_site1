@@ -10,6 +10,8 @@ sr.reveal('.conteiner2', {duration : 2000})
 sr.reveal('.info_obj-1', {duration : 5000})
 
 sr.reveal('.info_obj-2', {duration : 2000})
+ 
+
 
 class MobileNavbar{
     constructor(mobileMenu , navList, navLinks ) {
