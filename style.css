@@ -268,9 +268,7 @@ main{
 }
 .info_obj-1 img{
    border-radius: 30px;
-   min-width: 320;
-  max-width: 500;
-  width: 75% ;
+  width: 100% ;
   height: auto;
   align-items: center;
   justify-content: center;
