@@ -61,7 +61,7 @@ html{
   position: fixed;
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: 1s;
   z-index: 5;
   
   
@@ -371,7 +371,11 @@ main{
    
 }
 
-
+#inicio.rolagem .mobile-menu {
+  top:10px;
+  margin-top:0 ;
+   transition: 1s;
+}
 
 
 
